@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/damson_debugger/!svn/ver/21/edu.shef.damson.core/src/edu/shef/damson/core/model
+END
+DamsonValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/damson_debugger/!svn/ver/21/edu.shef.damson.core/src/edu/shef/damson/core/model/DamsonValue.java
+END
+DamsonVariable.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/damson_debugger/!svn/ver/21/edu.shef.damson.core/src/edu/shef/damson/core/model/DamsonVariable.java
+END
+WordStructureDelegate.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/damson_debugger/!svn/ver/4/edu.shef.damson.core/src/edu/shef/damson/core/model/WordStructureDelegate.java
+END
+DamsonThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/damson_debugger/!svn/ver/21/edu.shef.damson.core/src/edu/shef/damson/core/model/DamsonThread.java
+END
+DamsonDebugElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/damson_debugger/!svn/ver/4/edu.shef.damson.core/src/edu/shef/damson/core/model/DamsonDebugElement.java
+END
+DamsonStackFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/damson_debugger/!svn/ver/21/edu.shef.damson.core/src/edu/shef/damson/core/model/DamsonStackFrame.java
+END
+IDamsonEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/damson_debugger/!svn/ver/4/edu.shef.damson.core/src/edu/shef/damson/core/model/IDamsonEventListener.java
+END
+DamsonDebugTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/damson_debugger/!svn/ver/32/edu.shef.damson.core/src/edu/shef/damson/core/model/DamsonDebugTarget.java
+END

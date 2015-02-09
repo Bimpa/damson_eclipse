@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.variables.valueVariables">
+      <variable
+            description="Path to DAMSON executable in the local file system"
+            name="damsonExecutable"
+            initialValue="/usr/bin/damson"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            sourceLocatorId="sourceLocator"
+            delegate="edu.shef.damson.core.launcher.DamsonLaunchDelegate"
+            sourcePathComputerId="sourcePathComputer"
+            name="Damson Application"
+            id="launchType"
+            modes="run, debug"/>
+   </extension>
+
+
+   <extension
+         point="org.eclipse.debug.core.sourceLocators">
+      <sourceLocator
+            class="edu.shef.damson.core.sourcelookup.DamsonSourceLookupDirector"
+            name="Damson Source Locator"
+            id="sourceLocator"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.debug.core.sourcePathComputers">
+      <sourcePathComputer
+            class="edu.shef.damson.core.sourcelookup.DamsonSourcePathComputerDelegate"
+            id="sourcePathComputer"/>
+   </extension>
+    
+   <extension
+         point="org.eclipse.debug.core.breakpoints">
+      <breakpoint
+            class="edu.shef.damson.core.breakpoints.DamsonLineBreakpoint"
+            name="Damson Line Breakpoints"
+            markerType="edu.shef.damson.core.markerType.lineBreakpoint"
+            id="lineBreakpoint"/>
+   </extension>
+   
+   <extension
+         id="markerType.lineBreakpoint"
+         name="Damson Line Breakpoint Marker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.debug.core.lineBreakpointMarker"/>
+      <persistent value="true"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.debug.core.logicalStructureTypes">
+      <logicalStructureType
+            class="edu.shef.damson.core.model.WordStructureDelegate"
+            description="Words"
+            id="wordStructure"
+            modelIdentifier="debugModel"/>
+   </extension>
+   
+</plugin>

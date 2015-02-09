@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 30
+/svn/damson_debugger/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/damson_debugger/!svn/ver/43/edu.shef.damson.update
+END
+site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/damson_debugger/!svn/ver/48/edu.shef.damson.update/site.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/damson_debugger/!svn/ver/38/edu.shef.damson.update/.project
+END

@@ -1,0 +1,39 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 30
+/svn/damson_debugger/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/damson_debugger/!svn/ver/21/edu.shef.damson.core
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/damson_debugger/!svn/ver/7/edu.shef.damson.core/readme.txt
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/damson_debugger/!svn/ver/7/edu.shef.damson.core/build.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/damson_debugger/!svn/ver/4/edu.shef.damson.core/.project
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/damson_debugger/!svn/ver/32/edu.shef.damson.core/plugin.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/damson_debugger/!svn/ver/4/edu.shef.damson.core/.classpath
+END

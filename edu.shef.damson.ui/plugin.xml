@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+  <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="edu.shef.damson.ui.launcher.DamsonTabGroup"
+            description="Specify and launch a Damson program"
+            id="tabGroup"
+            type="launchType"/>
+         
+   </extension>
+   
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            icon="icons/full/obj16/damson.gif"
+            configTypeID="launchType"
+            id="typeImage"/>
+         
+   </extension>
+   
+   <extension
+         point="org.eclipse.debug.ui.debugModelPresentations">
+      <debugModelPresentation
+            class="edu.shef.damson.ui.presentation.DamsonModelPresentation"
+            id="debugModel"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            filenames="*.d"
+            class="edu.shef.damson.ui.editor.DamsonEditor"
+            icon="icons/full/obj16/damson.gif"
+            default="true"
+            name="Damson Editor"
+            id="editor"
+            extensions="d"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            targetID="editor"
+            id="rulerActions">
+         <action
+               label="Not Used"
+               class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate"
+               style="push"
+               actionID="RulerDoubleClick"
+               id="doubleClickBreakpointAction"/>
+      </editorContribution>
+   </extension>
+    
+   <extension
+           point="org.eclipse.ui.contexts">
+        <context
+              parentId="org.eclipse.debug.ui.debugging"
+              description="Debugging Damson Stack Machine Programs"
+              name="Debugging Damson Stack Machine Programs"
+              id="debugging"/>
+   </extension>
+     
+   <extension
+	        point="org.eclipse.debug.ui.debugModelContextBindings">
+	     <modelContextBinding
+	           contextId="debugging"
+	           debugModelId="debugModel"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">           
+      <viewerContribution
+            targetID="editor.rulerMenu"
+            id="editor.rulerActions">
+         <action
+               label="Toggle Breakpoint"
+               class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate"
+               menubarPath="debug"
+               id="editor.ruler.toggleBreakpointAction"/>
+      </viewerContribution>
+      <viewerContribution
+            targetID="editor.contextMenu"
+            id="editor.menuActions">
+         <action
+               label="Run to Line"
+               definitionId="org.eclipse.debug.ui.commands.RunToLine"
+               class="org.eclipse.debug.ui.actions.RunToLineActionDelegate"
+               menubarPath="additions"
+               id="editor.context.runToLineAction"/>
+      </viewerContribution>
+      <viewerContribution
+			targetID="editor.rulerMenu"
+            id="editor.rulerActions">
+         <action
+               label="Breakpoint &amp;Properties..."
+               class="edu.shef.damson.ui.actions.DamsonBreakpointRulerActionDelegate"
+               menubarPath="debug"
+               id="edu.shef.damson.ui.actions.DamsonBreakpointRulerActionDelegate"/>
+      </viewerContribution>   
+   </extension>
+   
+   <extension
+      point="org.eclipse.ui.propertyPages">
+      <page
+         class="edu.shef.damson.ui.properties.BreakpointPropertyPage"
+         id="edu.shef.damson.ui.properties.BreakpointPropertyPage"
+         name="DAMSON Breakpoint">
+         <enabledWhen>
+            <instanceof
+               value="edu.shef.damson.core.breakpoints.DamsonLineBreakpoint">
+            </instanceof>
+         </enabledWhen>
+      </page>        
+   </extension>
+
+   
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            class="edu.shef.damson.ui.breakpoints.DamsonEditorAdapterFactory"
+            adaptableType="edu.shef.damson.ui.editor.DamsonEditor">
+			<adapter type="org.eclipse.debug.ui.actions.IToggleBreakpointsTarget"/>
+			<adapter type="org.eclipse.debug.ui.actions.IRunToLineTarget"/>
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.breakpoints">
+   </extension>
+   
+   
+</plugin>

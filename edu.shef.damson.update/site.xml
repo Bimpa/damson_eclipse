@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="DAMSON IDE Update Site" url="http://damson.sites.sheffield.ac.uk/eclipse-plugin">
+      DAMSON IDE Eclipse plugin update site.
+   </description>
+   <feature url="features/edu.shef.damson.feature_1.0.1.qualifier.jar" id="edu.shef.damson.feature" version="1.0.1.qualifier" os="linux,win32" arch="x86">
+      <category name="edu.shef.damson"/>
+   </feature>
+   <category-def name="edu.shef.damson" label="DAMSON IDE">
+      <description>
+         DAMSON Project
+      </description>
+   </category-def>
+</site>

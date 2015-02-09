@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/breakpoints
+END
+DamsonBreakpointAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/damson_debugger/!svn/ver/34/edu.shef.damson.ui/src/edu/shef/damson/ui/breakpoints/DamsonBreakpointAdapter.java
+END
+DamsonEditorAdapterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/breakpoints/DamsonEditorAdapterFactory.java
+END
+DamsonRunToLineAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/breakpoints/DamsonRunToLineAdapter.java
+END

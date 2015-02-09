@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/damson_debugger/!svn/ver/22/edu.shef.damson.ui/src/edu/shef/damson/ui/editor
+END
+WordFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/WordFinder.java
+END
+DamsonEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonEditor.java
+END
+TextHover.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/damson_debugger/!svn/ver/22/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/TextHover.java
+END
+DamsonDocumentProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonDocumentProvider.java
+END
+AnnotationHover.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/AnnotationHover.java
+END
+DamsonScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/damson_debugger/!svn/ver/23/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonScanner.java
+END
+DamsonEditorMessages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonEditorMessages.properties
+END
+DamsonMultiLineCommentScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonMultiLineCommentScanner.java
+END
+DamsonContentAssistant.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonContentAssistant.java
+END
+DamsonSourceViewerConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonSourceViewerConfiguration.java
+END
+DamsonPartitionScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonPartitionScanner.java
+END
+DamsonContentAssistProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/damson_debugger/!svn/ver/2/edu.shef.damson.ui/src/edu/shef/damson/ui/editor/DamsonContentAssistProcessor.java
+END

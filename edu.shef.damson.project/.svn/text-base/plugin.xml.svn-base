@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="edu.shef.damson.project.wizards"
+            name="Damson">
+      </category>
+      <wizard
+            category="edu.shef.damson.project.wizards"
+            class="edu.shef.damson.project.DamsonNewProjectWizard"
+            finalPerspective="edu.shef.damson.project.perspective"
+            icon="icons/damson.gif"
+            id="edu.shef.damson.project.newproject"
+            name="Damson Project"
+            project="true">
+      </wizard>
+      <wizard
+            category="edu.shef.damson.project.wizards"
+            class="edu.shef.damson.project.DamsonNewFileWizard"
+            icon="icons/damson.gif"
+            id="edu.shef.damson.project.filewizard"
+            name="Damson File"
+            project="false">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="edu.shef.damson.project.Perspective"
+            icon="icons/damson.gif"
+            id="edu.shef.damson.project.perspective"
+            name="Damson IDE">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="edu.shef.damson.project.perspective">
+         <view
+               id="edu.shef.damson.project.navigator"
+               minimized="false"
+               ratio="0.25"
+               relationship="left"
+               relative="org.eclipse.ui.editorss">
+         </view>
+         <actionSet
+               id="org.eclipse.debug.ui.launchActionSet">
+         </actionSet>
+         <actionSet
+               id="org.eclipse.debug.ui.breakpointActionSet">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.eclipse.ui.navigator.CommonNavigator"
+            icon="icons/damson.gif"
+            id="edu.shef.damson.project.navigator"
+            name="Damson Navigator"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewerActionBinding
+            viewerId="edu.shef.damson.project.navigator">
+         <includes>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.*">
+            </actionExtension>
+         </includes>
+      </viewerActionBinding>
+      <viewerContentBinding
+            viewerId="edu.shef.damson.project.navigator">
+         <includes>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resourceContent">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.filters.*">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.linkHelper">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.workingSets">
+            </contentExtension>
+         </includes>
+      </viewerContentBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <newWizardShortcut
+               id="edu.shef.damson.project.newproject">
+         </newWizardShortcut>
+         <perspectiveShortcut
+               id="edu.shef.damson.project.perspective">
+         </perspectiveShortcut>
+         <viewShortcut
+               id="edu.shef.damson.project.navigator">
+         </viewShortcut>
+         <newWizardShortcut
+               id="edu.shef.damson.project.filewizard">
+         </newWizardShortcut>
+      </perspectiveExtension>
+   </extension>
+   
+   <extension
+      point="org.eclipse.core.resources.natures"
+      id="edu.shef.damson.project.natures.DamsonNature"
+      name="DAMSONNature">
+      <runtime>
+         <run class="edu.shef.damson.project.natures.DamsonNature">
+         </run>
+      </runtime>
+   </extension>
+   
+   
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="edu.shef.damson.project.properties.DamsonProjectPropertyPage"
+            id="edu.shef.damson.project.properties.samplePropertyPage"
+            name="DAMSON">
+         <enabledWhen>
+            <instanceof
+                  value="org.eclipse.core.resources.IProject">
+            </instanceof>
+         </enabledWhen>
+         <filter
+               name="nature"
+               value="edu.shef.damson.project.natures.DamsonNature">
+         </filter>
+      </page>
+   </extension>
+   
+  
+</plugin>
